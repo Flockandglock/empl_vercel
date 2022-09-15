@@ -45,7 +45,7 @@ const EmployeesAddForm = () => {
                                     .required('Это обязательное поле')
                     })}
                      onSubmit={(value, actions) => onSubmit(value, actions)}>
-                <Form className="add-form d-flex">
+                <Form className="add-form ">
                     <Field type="text"
                         className="form-control new-post-label"
                         placeholder="Как его зовут?" 

@@ -3,7 +3,7 @@ import './employees-list-item.css';
 const EmployeesListItem = ({name, salary, rise, increase, onToggleProp, removeEmpl}) => {
 
     // динамически формируем класс. Он зависит от increase и rise
-    let className = 'list-group-item d-flex justify-content-between ';
+    let className = 'list-group-item  ';
     if (increase) {
         className += ' increase';
     }
@@ -15,8 +15,9 @@ const EmployeesListItem = ({name, salary, rise, increase, onToggleProp, removeEm
     return (
         <li className={className}>
             <span className="list-group-item-label" data-toggle='rise' onClick={onToggleProp}>{name}</span>
-            <input type="text" className="list-group-item-input" defaultValue={`${salary} $`}/>
-            <div className='d-flex justify-content-center align-items-center'>
+            <div className="salary">{`${salary} $`}</div>
+            
+            <div className='d-flex '>
                 <button type="button"
                     className="btn-cookie btn-sm " data-toggle='increase' onClick={onToggleProp}>
                     <i className="fas fa-cookie"></i>
