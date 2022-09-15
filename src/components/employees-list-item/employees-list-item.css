@@ -80,19 +80,25 @@
 
 @media (max-width: 767px) {
     .list-group-item span {
-        min-width: 398px;
+        min-width: 350px;
     }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 570px) {
     .list-group-item span {
         min-width: 277px;
     }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 493px) {
     .list-group-item span {
-        min-width: 227px;
+        min-width: 190px;
+    }
+}
+
+@media (max-width: 375px) {
+    .list-group-item span {
+        min-width: 166px;
     }
 }
   
